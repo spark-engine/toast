@@ -1,5 +1,7 @@
 # Changelog
 
+## 3.1.0
+
 ## 3.0.3
 - Notification.clear(true) now removes the notifications immediately.
 - Removed test which Phantom JS cannot run properly because of improper animation event support.

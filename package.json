@@ -1,6 +1,6 @@
 {
-  "name": "compose-notification",
-  "version": "3.0.5",
+  "name": "@spark-engine/toast",
+  "version": "3.1.0",
   "description": "Notification dispatch and presentation",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/compose-ui/notification.git"
+    "url": "git://github.com/spark-engine/toast.git"
   },
   "keywords": [
+    "toast",
     "notification",
-    "notifications",
-    "compose",
-    "browserify"
+    "notifications"
   ],
   "contributors": [
     "George Shank",
@@ -23,11 +22,11 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/compose-ui/notification/issues"
+    "url": "https://github.com/spark-engine/toast/issues"
   },
-  "homepage": "https://github.com/compose-ui/notification",
+  "homepage": "https://github.com/spark-engine/toast",
   "dependencies": {
-    "compose-event": "^1.0.0"
+    "@spark-engine/event": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

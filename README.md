@@ -1,29 +1,29 @@
-#Notification
+#Spark Toast
 
 > Notification dispatch and presentation
 
 ## Usage
 
 ```javascript
-var notify = require('compose-notification')
+var toast = require('@spark-engine/toast')
 ```
 
-### `notify(message)`
+### `toast(message)`
 
 Uses the 'normal' type of notification.
 
 ```javascript
-notify('Hello world.')
+toast('Hello world.')
 ```
 
-### `notify(type, message)`
+### `toast(type, message)`
 
 Uses the specified type of notification.
 
 ```javascript
-notify('Hello world.', 'success')
+toast('Hello world.', 'success')
 ```
 
-### `notify.success`, `notify.error`, `notify.action`, `notify.normal`
+### `toast.success`, `toast.error`, `toast.action`, `toast.normal`
 
 Helper functions that do exactly what they say they do.

@@ -1,8 +1,12 @@
 var assert = require('chai').assert
 
 var notify = require('../')
-var Event = require('compose-event')
+var Event = require('@spark-engine/event')
 var $ = function(str) { return document.querySelector(str) }
+
+// Support for Object.assign
+require('../lib/_object.assign')
+
 
 function clear(done){
   this.msg.destroy()
@@ -10,8 +14,8 @@ function clear(done){
 }
 
 function assertMessage(type, message){
-  var el = $('.notification.'+type+' .notification-message')
-  assert.isNotNull(el, 'Could not find '+'.notification.'+type+' .notification-message')
+  var el = $('.toast-container.'+type+' .toast-message')
+  assert.isNotNull(el, 'Could not find '+'.toast-container.'+type+' .toast-message')
   assert.equal(el.innerHTML, message)
 }
 

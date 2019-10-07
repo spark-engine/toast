@@ -1,6 +1,3 @@
-// Support for Object.assign
-require('./lib/_object.assign')
-
 var Notifier = require('./lib/notifier')
 
 var defaultsByType = {
